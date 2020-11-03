@@ -1,0 +1,25 @@
+<mat-sidenav-container class="example-container">
+	<mat-sidenav mode="over" [(opened)]="isShowing">
+    <mat-card>
+      <h3>OpenStreet Maps</h3>
+      <i class="fa fa-close" (click)="isShowing=!isShowing"></i>
+    </mat-card>
+
+    <!-- Initial Header -->    
+    <h4 class="secondary-header">Powered By</h4>
+    <mat-card class="mat-card-border-left"> 
+      <h4>Leaflet Maps</h4>
+    </mat-card>
+
+    <!-- Date Range -->    
+    <h4 class="secondary-header">Date Range</h4>
+    <mat-card>
+      <h3>Date Range Picker</h3>
+    </mat-card>
+  </mat-sidenav>
+	<mat-sidenav-content>
+    <mat-card>
+      <i class="fa fa-bars" (click)="isShowing=!isShowing"></i>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
