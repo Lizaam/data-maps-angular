@@ -35,37 +35,12 @@
     <mat-card class="bg-transparent">
       <form>
         <div class="form-row text-light">
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Monday</label>
+          <div *ngFor="let day of daysList" class="col-md-6 col-xs-6">
+            <input type="checkbox" id="{{ 'checkboxDay' + day.id }}" value={{day.value}}>
+            <label class="form-check-label ml-2" for="{{ 'checkboxDay' + day.id }}">{{ day.day }}</label>
           </div>
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Tuesday</label>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Wednesday</label>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Thursday</label>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Friday</label>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Saturday</label>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label ml-2" for="inlineCheckbox1">Sunday</label>
-          </div>
-
-          <div class="col-md-12 mt-4">
-            <button type="button" class="btn btn-primary w-50">Search</button>
+          <div class="col-md-12">
+            <button type="button" class="btn btn-primary mt-4 w-50">Search</button>
           </div>
         </div>
       </form>
