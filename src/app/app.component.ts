@@ -10,7 +10,7 @@ import { DAYS_LIST, CITIES_LIST } from './lists/constants';
 })
 
 export class AppComponent {
-  public daysList: Days[] = DAYS_LIST;
+  public daysList: Days[] = DAYS_LIST; 
   public citiesList: Cities[] = CITIES_LIST;
 
   isShowing: boolean = true;
