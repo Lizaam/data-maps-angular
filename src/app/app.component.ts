@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Cities } from './interfaces/cities';
 import { Days } from './interfaces/days';
+import { DAYS_LIST, CITIES_LIST } from './lists/constants';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +10,8 @@ import { Days } from './interfaces/days';
 })
 
 export class AppComponent {
-  isShowing: boolean = true;
+  public daysList: Days[] = DAYS_LIST;
+  public citiesList: Cities[] = CITIES_LIST;
 
-  public daysList: Days[] = [
-    { id: 1, day: "Monday", code: "MON", value: "monday" },
-    { id: 2, day: "Tuesday", code: "TUE", value: "tuesday" },
-    { id: 3, day: "Wednesday", code: "WED", value: "wednesday" },
-    { id: 4, day: "Thursday", code: "THU", value: "thursday" },
-    { id: 5, day: "Friday", code: "FRI", value: "friday" },
-    { id: 6, day: "Saturday", code: "SAT", value: "saturday" },
-    { id: 7, day: "Sunday", code: "SUN", value: "sunday" }
-  ];
+  isShowing: boolean = true;
 }
