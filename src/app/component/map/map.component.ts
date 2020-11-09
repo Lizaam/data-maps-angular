@@ -36,11 +36,11 @@ export class MapComponent implements OnInit {
   }
 
   private addSampleMarker() {
-    const marker = new Marker([51.51, 0])
+    const marker = new Marker([-29, 22])
       .setIcon(icon({
-        iconSize: [25, 41],
+        iconSize: [25, 25],
         iconAnchor: [13, 41],
-        iconUrl: 'assets/marker-icon.png'
+        iconUrl: 'assets/map-markers/marker.png'
       })
     );
     
