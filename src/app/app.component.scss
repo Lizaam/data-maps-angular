@@ -44,7 +44,13 @@ h6 {
 }
 
 .fa-bars {
+  position: relative;
   color: #000;
+  z-index: 999999;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 2px;
 }
 
 .bg-transparent {
@@ -52,5 +58,5 @@ h6 {
 }
 
 ::ng-deep .mat-drawer-inner-container {
-  overflow: visible!important;
+  overflow: visible !important;
 }
