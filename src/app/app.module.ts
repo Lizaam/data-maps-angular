@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './modules/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { Daterangepicker } from 'ng2-daterangepicker';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     FormsModule,
     MaterialModule,
     HttpClientModule,
-    LeafletModule
+    LeafletModule,
+    Daterangepicker
   ],
   providers: [],
   bootstrap: [AppComponent]
