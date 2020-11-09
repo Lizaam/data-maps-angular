@@ -23,8 +23,11 @@
     "@angular/router": "~9.1.0",
     "@asymmetrik/ngx-leaflet": "^8.1.0",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
+    "@types/jquery": "^3.5.4",
     "@types/mapbox-gl-leaflet": "0.0.1",
+    "jquery": "^3.5.1",
     "leaflet": "^1.7.1",
+    "ng2-daterangepicker": "^3.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
