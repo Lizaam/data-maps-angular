@@ -1,0 +1,14 @@
+#ip-date-range-picker {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  font-size: 9pt;
+  cursor: pointer;
+
+  &:focus {
+    border: transparent;
+    box-shadow: transparent;
+  }
+}
