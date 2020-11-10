@@ -1,39 +1,39 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav mode="over" [(opened)]="isShowing">
     <mat-card>
-      <h5 class="d-inline-block m-0">OpenStreet Maps</h5>
+      <p class="d-inline-block m-0">OpenStreet Maps</p>
       <i class="fa fa-close" (click)="isShowing=!isShowing"></i>
     </mat-card>
 
     <!-- Initial Header -->
-    <h5 class="secondary-header">Powered By</h5>
+    <p class="secondary-header">Powered By</p>
     <mat-card class="mat-card-border-left">
-      <h6>Leaflet Maps</h6>
+      <p>Leaflet Maps</p>
     </mat-card>
 
     <!-- Date Range -->
-    <h5 class="secondary-header">Date Range</h5>
+    <p class="secondary-header">Date Range</p>
     <mat-card>
-      <h6>Date Range Picker</h6>
+      <app-date-range-picker></app-date-range-picker>
     </mat-card>
 
     <!-- City View -->
-    <h5 class="secondary-header">View By City</h5>
+    <p class="secondary-header">View By City</p>
     <mat-card class="bg-transparent">
       <div class="row">
         <div *ngFor="let city of citiesList" class="col-md-6 col-xs-6 pl-1">
-          <button type="button" class="btn btn-light w-100" data-id={{city.id}}
+          <button type="button" class="btn btn-light w-100 text-ellipse" data-id={{city.id}}
             value={{city.value}}>{{ city.city }}</button>
         </div>
       </div>
     </mat-card>
 
     <!-- Days of the Week -->
-    <h5 class="secondary-header">Days Of The Week</h5>
+    <p class="secondary-header">Days Of The Week</p>
     <mat-card class="bg-transparent">
       <form>
         <div class="form-row text-light">
-          <div *ngFor="let day of daysList" class="col-md-6 col-xs-6">
+          <div *ngFor="let day of daysList" class="col-md-6 col-xs-6 text-ellipse">
             <input type="checkbox" id="{{ 'checkboxDay' + day.id }}" value={{day.value}}>
             <label class="form-check-label ml-2" for="{{ 'checkboxDay' + day.id }}">{{ day.day }}</label>
           </div>

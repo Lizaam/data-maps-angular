@@ -12,11 +12,13 @@ import { MaterialModule } from './modules/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { Daterangepicker } from 'ng2-daterangepicker';
+import { DateRangePickerComponent } from './component/date-range-picker/date-range-picker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    DateRangePickerComponent
   ],
   imports: [
     BrowserModule,
