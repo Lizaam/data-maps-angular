@@ -10,12 +10,12 @@ export class DateRangePickerComponent implements OnInit {
 
   public daterange: any = {};
   public options: any = {
-    locale: { 
-      format: 'YYYY-MM-DD' 
+    locale: {
+      format: 'YYYY-MM-DD'
     },
     alwaysShowCalendars: true,
-  }
- 
+  };
+
   public selectedDate(value: any, datepicker?: any) {
     datepicker.start = value.start;
     datepicker.end = value.end;

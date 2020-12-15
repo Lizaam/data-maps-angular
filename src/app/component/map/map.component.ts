@@ -43,7 +43,7 @@ export class MapComponent implements OnInit {
         iconUrl: 'assets/map-markers/marker.png'
       })
     );
-    
+
     marker.addTo(this.map);
   }
 

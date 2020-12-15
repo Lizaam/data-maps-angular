@@ -1,8 +1,8 @@
 /**
- * Constants wthat should not be changed or altered in any way 
+ * Constants what should not be changed or altered in any way
  */
 
-// List of days 
+// List of days
 export const DAYS_LIST = [
   { id: 1, day: 'Monday', code: 'MON', value: 'monday' },
   { id: 2, day: 'Tuesday', code: 'TUE', value: 'tuesday' },
@@ -11,10 +11,10 @@ export const DAYS_LIST = [
   { id: 5, day: 'Friday', code: 'FRI', value: 'friday' },
   { id: 6, day: 'Saturday', code: 'SAT', value: 'saturday' },
   { id: 7, day: 'Sunday', code: 'SUN', value: 'sunday' }
-]
+];
 
 // List of cities
 export const CITIES_LIST = [
   { id: 1, city: 'Cape Town', code: 'CT', value: 'cape-town' },
   { id: 2, city: 'Johannesburg', code: 'JHB', value: 'johannesburg' }
-]
+];
